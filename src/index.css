@@ -10,15 +10,15 @@ body {
 
 .App {
   background: url(../img/lofi-sky.jpeg) center no-repeat;
-  width: 100vw;
+  background-size: cover;
+  width: 100%;
   height: 100vh;
-  border-radius: 3px;
 }
 
 .Container {
   margin: 0 auto;
-  padding-top: 80px;
-  max-width: 600px;
+  padding: 80px 20px 0 20px;
+  max-width: 650px;
   width: 95%;
 }
 
@@ -27,7 +27,7 @@ header {
   margin-bottom: 40px;
   border: 1.5px solid white;
   color: white;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 h1 {
@@ -59,14 +59,20 @@ h1:after {
 
 .AddThoughtForm input {
   padding: 0.8rem;
-  border: 1px solid #666;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .AddThoughtForm button {
-  padding: 0.8rem;
-  border: 1px solid #666;
-  border-radius: 3px;
+  padding: 0.85rem 1.2rem;
+  background: #8379c2;
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+
+.AddThoughtForm button:hover {
+  background: #beb7eb;
+  color: #8379c2;
 }
 
 .AddThoughtForm input[type="text"] {
@@ -83,7 +89,7 @@ h1:after {
 .Thought {
   padding: 1rem;
   margin-bottom: 1rem;
-  border-radius: 3px;
+  border-radius: 6px;
   background-color: #eee;
 }
 
@@ -91,13 +97,13 @@ h1:after {
   font-size: 80%;
   float: right;
   border: 0;
-  border-radius: 3px;
+  border-radius: 6px;
   background: transparent;
 }
 
 .Thought .remove-button:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #beb7eb;
 }
 
 #Error::placeholder {

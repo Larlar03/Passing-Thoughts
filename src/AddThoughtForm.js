@@ -39,7 +39,7 @@ export default function AddThoughtForm(props) {
       />
       <div className="input-group-append">
         <button className="btn btn-outline-secondary" type="button">
-          Add
+          +
         </button>
       </div>
     </form>
